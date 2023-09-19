@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection{
+    background-color: #222;
+    color: white;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.container{
+    height: 100vh;
+    background-image: url(./vsIcon.jpg);
+    background-size: contain;
+}
+.container .vs{
+   width: 100%;
+   height: 80vh;
+   position: relative;
+}
+.container .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    color: red;
+}
+.container .title h2{
+    cursor: pointer;
+    transition: all 1s ease-in-out; 
+    padding: 20px 0;
+}
+.container .title h2:hover{
+    background-color: red;
+    color: #222;
+    padding: 20px 300px;
+} 
+.container .vs div{
+    border-radius:10px ;
+    position: absolute;
+    height: 500px;
+    width: 440px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 65px;
+}
+.container .compyuterChoices{
+    right: 183px;
+}
+.container .myChoices{
+    left: 183px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+}
+.container .btn-container{
+    width: 76%;
+    margin: 0 auto;
+    display: none;
+}
+.container .btn-container button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #222;
+    font-size: 18px;
+    padding: 10px 30px;
+    border: 1px solid white;
+    margin-right: 10px;
+    transition: 1s all  ease-in-out;
+}
+.container .btn-container button:hover{
+    background-color: white;
+    color: #222;
+}
+.container .vs .result{
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222;
+    font-size: 80px;
+    font-weight: 700;
+    position: absolute;
+    left: 550px;
+    top: 250px;
+    text-align: center;
+    height: fit-content;
+    padding-bottom: 10px;
+}
+.container .vs .result span{
+    padding: 10px 0;
+}
+.container .vs .result button{
+    cursor: pointer;
+    color: green;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    background-color: #222;
+}
